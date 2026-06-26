@@ -1,0 +1,154 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* Header section  */
+.navbar {
+    background-color: rgb(230, 137, 137);
+}
+#head-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-right: 0.8rem;
+}
+.head-port {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px black;
+}
+.navbar-toggler-icon {
+    color: white !important;
+    height: 20px;
+    width: 20px;
+}
+.nav-link {
+    color: white !important;
+    transition: all 0.3s linear;
+    border-radius: 10px;
+    padding: 6px 30px;
+}
+.nav-link:hover {
+    color: purple !important;
+    background-color: white;
+}
+
+.offcanvas-body ul li {
+    list-style: none;
+}
+.offcanvas-body a {
+    padding: 0;
+}
+.mobile-nav {
+    color: rgb(92, 92, 92) !important;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
+.mobile-nav:hover {
+    color: red !important;
+}
+/* Header section  */
+
+
+
+/* Hero Section  */
+.hero {
+    background-color: rgb(20, 16, 16);
+    padding: 6rem 0;
+}
+.hero-button {
+    background: linear-gradient(to left, blue, rgba(0, 0, 255, 0.61));
+    color: white;
+    font-size: 1.2rem;
+}
+.hero-button:hover {
+    color: white;
+    background: linear-gradient(to left, rgba(0, 0, 255, 0.774), rgba(0, 0, 255, 0.411));
+}
+.hero-name {
+    font-weight: bold;
+}
+/* Hero Section  */
+
+
+
+/* About Section  */
+#about-head {
+    font-family: Open Sans;
+    font-weight: bolder !important;
+}
+#About div{
+    text-align: justify;
+}
+#Contact div{
+    text-align: justify;
+    font-weight: bold !important;
+}
+ @media (min-width: 768px) {
+    .skill-img {
+        height: 200px;
+    }
+ }
+/* About Section  */
+
+
+
+/* Skill Section  */
+.hover-card{
+    transition: all 0.3s linear;
+}
+.hover-card:hover {
+    transform: translateY(-15px);
+    cursor: default;
+}
+/* Skill Section  */
+
+
+/* Project Section  */
+.pro-hover-card {
+    transition: all 0.3s linear;
+    box-shadow: 3px 3px rgb(163, 163, 163);
+}
+/* Project Section  */
+
+
+/* Statistics Section  */
+#stats-bg-1 {
+    background-color: #EF4123;
+}
+#stats-bg-2 {
+    background-color: #F26522;
+}
+#stats-bg-3 {
+    background-color: #EE871D;
+}
+#stats-bg-4 {
+    background-color: #F99D1C;
+}
+.state-info {
+    color: black;
+    background-color: yellow !important;
+    padding: 0.4rem 1.5rem;
+    border-radius: 30px;
+}
+/* Statistics Section  */
+
+
+
+/* Contact Section  */
+.social-logo a{
+    color: black !important;
+    font-size: 1.2rem;
+}
+.social-logo a:hover{
+    color: red !important;
+}
+.contact-info {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.contact-info span{
+    font-weight: bold;
+}
+/* Contact Section  */
