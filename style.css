@@ -48,6 +48,9 @@ html, body {
 .mobile-nav:hover {
     color: red !important;
 }
+.navbar-toggler {
+    border: none !important;
+}
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler:focus-visible {
