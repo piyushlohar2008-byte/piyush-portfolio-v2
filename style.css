@@ -53,6 +53,16 @@ html, body {
 .mobile-nav:hover {
     color: red !important;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+     outline: none !important;
+     box-shadow: none !important;
+} 
+.navbar-toggler-icon {
+     width: 25px;
+     height: 25px;
+}
 /* Header section  */
 
 
