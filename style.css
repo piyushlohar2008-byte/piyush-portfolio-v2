@@ -29,7 +29,11 @@ html, body {
     color: purple !important;
     background-color: white;
 }
-
+@media (max-width:450px){
+    .offcanvas{
+        width:360px !important;
+    }
+}
 @media (max-width:425px){
     .offcanvas{
         width:300px !important;
