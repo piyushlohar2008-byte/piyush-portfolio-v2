@@ -17,7 +17,8 @@ html, body {
     font-weight: bold;
     font-size: 1.5rem;
     text-shadow: 2px 2px black;
-}
+}
+
 .nav-link {
     color: white !important;
     transition: all 0.3s linear;
@@ -108,12 +109,14 @@ html, body {
 
 
 /* Skill Section  */
-.hover-card{
-    transition: all 0.3s linear;
-}
-.hover-card:hover {
-    transform: translateY(-15px);
-    cursor: default;
+@media (min-width: 500px) {
+    .hover-card{
+        transition: all 0.3s linear;
+    }   
+    .hover-card:hover {
+        transform: translateY(-15px);
+        cursor: default;
+    }
 }
 /* Skill Section  */
 
