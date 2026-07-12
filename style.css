@@ -1,95 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body {
     scroll-behavior: smooth;
 }
+:root {
+    --navbar-brand-color: #ff6200;
+    --primary-color: #FF651C;
+    --dark-color: #373737;
+    --contact-bg: #ffffff;
+}
+.set-poppin {
+    font-family: "Poppins";
+}
 
 /* Header section  */
-.navbar {
-    background-color: rgb(230, 137, 137);
+.navbar-brand {
+    font-family: Jost;
 }
-#head-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    margin-right: 0.8rem;
-}
-.head-port {
-    font-family: Poppins;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px black;
-}
-
-.nav-link {
-    color: white !important;
-    transition: all 0.3s linear;
-    border-radius: 10px;
-    padding: 6px 30px;
-}
-.nav-link:hover {
-    color: purple !important;
-    background-color: white;
-}
-@media (max-width:450px){
-    .offcanvas{
-        width:360px !important;
-    }
-}
-@media (max-width:425px){
-    .offcanvas{
-        width:300px !important;
-    }
-}
-.offcanvas-body ul li {
-    list-style: none;
-}
-.offcanvas-body a {
-    padding: 0;
-}
-.mobile-nav {
-    color: rgb(92, 92, 92) !important;
-    margin-bottom: 2rem;
-    font-size: 1.3rem;
-}
-.mobile-nav:hover {
-    color: red !important;
+.nav-surname {
+    color: var(--navbar-brand-color);
 }
 .navbar-toggler {
-    border: none !important;
+    border-radius: 0;
+    border: none;
 }
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler:focus-visible {
-     outline: none !important;
-     box-shadow: none !important;
-} 
-.navbar-toggler-icon {
-     width: 25px;
-     height: 25px;
+.navbar-toggler:focus {
+    outline: 0;
+    box-shadow: none;
 }
+.nav-item .nav-link {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+    color: black !important;
+}
+.nav-link:after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 2px;
+    transition: all 0.2s linear;
+    background: var(--primary-color);
+}
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+.nav-link:hover::after {
+    right: auto;
+    width: 100%;
+    left: 0;
+}
+.nav-item a{
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    color: #CB612F;
+}
+@media (max-width: 991px) {
+    .nav-item a{
+        display: inline;
+    }
+}
+.contact-btn button{
+    color: white !important;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1.2rem;
+    color: var(--primary-color);
+    border: none;
+    transition: all 0.2s linear;
+}
+.contact-btn button:hover {
+    background-color: var(--dark-color);
+}
+.contact-btn {
+    transition: all 0.2s;
+    box-shadow: 6px 6px var(--dark-color);
+}
+.contact-btn:hover {
+    transition: all 0.2s;
+    box-shadow: 5px 5px var(--primary-color);
+}
+/* Offcanvas */
+@media (max-width: 450px) {
+    .offcanvas {
+        width: 360px !important;
+    }
+}
+@media (max-width: 425px) {
+    .offcanvas {
+        width: 300px !important;
+    }
+}
+@media (max-width: 385px) {
+    .offcanvas {
+        width: 280px !important;
+    }
+}
+
 /* Header section  */
 
-
-
-/* Hero Section  */
-.hero {
-    background-color: rgb(20, 16, 16);
-    padding: 6rem 0;
+/* Hero section  */
+.hero-section {
+    background-color: rgba(254, 196, 72, 0.1);
 }
-.hero-button {
-    background: linear-gradient(to left, blue, rgba(0, 0, 255, 0.61));
-    color: white;
-    font-size: 1.2rem;
+.HeroImage {
+    border-radius: 50%;
 }
-.hero-button:hover {
-    color: white;
-    background: linear-gradient(to left, rgba(0, 0, 255, 0.774), rgba(0, 0, 255, 0.411));
+.colored-btn {
+    color: black;
+    font-weight: 400;
 }
-.hero-name {
-    font-weight: bold;
+.home-intro h1 {
+    font-family: "Open Sans";
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin: 0 0 1rem 0;
+    line-height: 1;
 }
-/* Hero Section  */
-
-
+@media (max-width: 767px) {
+    .home-intro h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .home-intro h1 {
+        font-size: 40px;
+    }
+}
+.home-intro p {
+    font-size: 1.1rem;
+}
+/* Hero section  */
 
 /* About Section  */
 #about-head {
@@ -109,7 +161,6 @@ html, body {
     }
  }
 /* About Section  */
-
 
 
 /* Skill Section  */
@@ -153,7 +204,6 @@ html, body {
     border-radius: 30px;
 }
 /* Statistics Section  */
-
 
 
 /* Contact Section  */
