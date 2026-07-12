@@ -2,7 +2,6 @@
 
 Official portfolio website of Piyush Lohar.
 
-## 🌐 Piyush Portfolio
 A modern, responsive portfolio website showcasing my frontend web development projects, skills, and contact information.
 
 ## 🚀 Live Website
