@@ -51,17 +51,16 @@
     <link rel="icon" type="image/png" href="https://piyushlohar.onrender.com/images/testimonial-1.png">
     
     <!-- Fonts  -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+   <link
+        href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
 
     <!-- Bootstrap 5 link  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Font awesome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -70,6 +69,7 @@
 
     <!-- Coustom CSS link  -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
 
     <script type="application/ld+json">
     {
@@ -130,347 +130,451 @@
     }
     </script>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
     <!-- Header section  -->
-    <nav class="navbar navbar-expand-lg">
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/logo.png" class="img-fluid" alt="logo">
+                </a>
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered navbar-toggler-icon" style="color: blue;"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header section  -->
+
+
+    <!-- Banner section -->
+    <section id="home" class="banner_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 order-lg-1 order-2 banner-content">
+                    <h2 class="text-uppercase position-relative">Hello</h2>
+                    <h1 class="text-uppercase">I am Piyush</h1>
+                    <h5 class="text-uppercase">Junior Frontend designer</h5>
+                    <div class="mt-5">
+                        <a class="main-btn primary-btn" href="#about">Hire Me</a>
+                        <a class="main-btn secondary-btn ms-4" href="https://maujevadgaongp.vercel.app/" target="_blank">Get sv</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1">
+                    <div class="top-right-img">
+                        <img src="/images/home-right.webp" class="img-fluid" alt="home_right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner section -->
+
+
+    <!-- about section -->
+    <section class="about_wrapper" id="about">
         <div class="container-fluid">
-            <a class="navbar-brand ms-2 fs-3 text-black-50" href="https://github.com/piyushlohar2008-byte/">Piyush <span class="nav-surname">Lohar</span></a>
+            <div class="row align-items-center">
+                <div class="col-lg-6 ms-0 ms-lg-3 mb-4 mb-lg-0 text-start">
+                    <img src="/images/about-us.webp" class="img-fluid" alt="about_image">
+                </div>
+                <div class="col-lg-5 ms-0 ms-lg-4 mb-4 mb-lg-0">
+                    <h3>let's <br> introduce about <br> myself</h3>
+                    <p class="about_para">I'm Piyush Lohar, a Computer Science Diploma student with a strong interest in
+                        front-end web development.</p>
+                    <p class="about_para">I enjoy creating clean, responsive, and user-friendly websites using HTML,
+                        CSS, and Bootstrap.vMy learning approach focuses on building real-world projects, where every
+                        new concept is implemented through practical experience.</p>
+                    <a href="#" class="main-btn primary-btn mt-4">Download CV</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center pt-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 col-sm-6 col-11 mb-4">
+                                <div class="single_logo_item">
+                                    <img src="/images/client-img/logo1.webp" class="img-fluid" alt="logo-1">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-11 mb-4">
+                                <div class="single_logo_item">
+                                    <img src="/images/client-img/logo2.webp" class="img-fluid" alt="logo-2">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-11 mb-4">
+                                <div class="single_logo_item">
+                                    <img src="/images/client-img/logo3.webp" class="img-fluid" alt="logo-3">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-11 mb-4">
+                                <div class="single_logo_item">
+                                    <img src="/images/client-img/logo4.webp" class="img-fluid" alt="logo-4">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-11 mb-4">
+                                <div class="single_logo_item">
+                                    <img src="/images/client-img/logo5.webp" class="img-fluid" alt="logo-5">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-11 mb-4">
+                                <div class="single_logo_item">
+                                    <img src="/images/client-img/logo6.webp" class="img-fluid" alt="logo-6">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-11 mb-4">
+                                <div class="single_logo_item">
+                                    <img src="/images/client-img/logo7.webp" class="img-fluid" alt="logo-7">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-11 mb-4">
+                                <div class="single_logo_item">
+                                    <img src="/images/client-img/logo8.webp" class="img-fluid" alt="logo-8">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-11 mb-4">
+                                <div class="single_logo_item">
+                                    <img src="/images/client-img/logo9.webp" class="img-fluid" alt="logo-9">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-4 ">
-                    <li class="nav-item">
-                        <a class="nav-link text-black set-poppin" href="#Home">Home</a>
+                    <div class="offset-lg-2 col-lg-4 col-md-10 d-none d-lg-inline justify-content-lg-end">
+                        <div class="client-info">
+                            <div class="d-flex">
+                                <span class="large">2</span>
+                                <span class="smll">Years <br> Experience <br> Working</span>
+                            </div>
+                            <div class="call-now d-flex pt-4">
+                                <div class="ms-4">
+                                    <p>Call Us Now</p>
+                                    <h5>+91 9665259715</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section -->
+
+
+    <!-- services section -->
+    <section class="service_wrapper" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h2>SERVICES OFFERS</h2>
+                    <p>Is give may shall likeness made yielding spirit a itself togeth created after sea <br
+                            class="d-none d-lg-block"> is an beast begining signs open god you're gathering it</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded border-0 text-center py-3 px-4 h-100">
+                        <div>
+                            <img src="/images/services-img/mouse.webp" class="img-fluid" alt="mouse">
+                            <h5 class="text-uppercase mt-4 mb-3">Web Development</h5>
+                            <p>Web development builds and maintains websites using front-end design, back-end logic, and
+                                database management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded border-0 text-center py-4 px-4 h-100">
+                        <div>
+                            <img src="/images/services-img/ui-ux.webp" class="img-fluid" alt="mouse">
+                            <h5 class="text-uppercase mt-4 mb-3">UI/UX design</h5>
+                            <p>UI/UX design creates visually appealing, intuitive, and user-friendly digital experiences
+                                through research and wireframing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded border-0 text-center py-4 px-4 h-100">
+                        <div>
+                            <img src="/images/services-img/website.webp" class="img-fluid" alt="mouse">
+                            <h5 class="text-uppercase mt-4 mb-3">Web design</h5>
+                            <p>Web design creates a website's layout, visual appearance, and user interface using
+                                graphic elements and coding.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded border-0 text-center py-4 px-4 h-100">
+                        <div>
+                            <img src="/images/services-img/seo.webp" class="img-fluid" alt="mouse">
+                            <h5 class="text-uppercase mt-4 mb-3">SEO optimize</h5>
+                            <p>SEO optimization improves website visibility on search engines to drive organic traffic
+                                through keywords and links.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section -->
+
+    <!-- Portfolio section  -->
+    <section class="portfolio-wrapper" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-left mb-md-5 mb-2">
+                    <h2>QUALITY WORK <br>RECENTLY DONE PROJECT</h2>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
+                            aria-selected="true">Populer</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black set-poppin" href="#About">About</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two"
+                            aria-selected="false">Latest</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black set-poppin" href="#Skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black set-poppin" href="#Projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black set-poppin" href="#Statics">Statics</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
+                            aria-selected="false">Upcoming</button>
                     </li>
                 </ul>
-                <div class="contact-btn">
-                    <a href="#Contact"><button class="set-poppin" type="button">Contact Now</button></a>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-one-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/portfolio1.webp" class="img-fluid w-100" alt="portfolio-1">
+                                    <div class="overlay"><span>+</span></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <P>Animated, Portfolio</P>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/portfolio2.webp" class="img-fluid w-100" alt="portfolio-2">
+                                    <div class="overlay"><span>+</span></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <P>Animated, Portfolio</P>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/portfolio3.webp" class="img-fluid w-100" alt="portfolio-3">
+                                    <div class="overlay"><span>+</span></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <P>Animated, Portfolio</P>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/portfolio4.webp" class="img-fluid w-100" alt="portfolio-1">
+                                    <div class="overlay"><span>+</span></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <P>Animated, Portfolio</P>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/portfolio5.webp" class="img-fluid w-100" alt="portfolio-2">
+                                    <div class="overlay"><span>+</span></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <P>Animated, Portfolio</P>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/portfolio6.webp" class="img-fluid w-100" alt="portfolio-3">
+                                    <div class="overlay"><span>+</span></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <P>Animated, Portfolio</P>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/portfolio7.webp" class="img-fluid w-100" alt="portfolio-1">
+                                    <div class="overlay"><span>+</span></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <P>Animated, Portfolio</P>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/portfolio8.webp" class="img-fluid w-100" alt="portfolio-2">
+                                    <div class="overlay"><span>+</span></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <P>Animated, Portfolio</P>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/portfolio9.webp" class="img-fluid w-100" alt="portfolio-3">
+                                    <div class="overlay"><span>+</span></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <P>Animated, Portfolio</P>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- Portfolio section  -->
 
-    </nav>
 
-    <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <!-- Blog section -->
+     <section class="blog_wrapper" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h2>BLOG</h2>
+                    <p>A blog is a regularly updated website or online journal where  <br class="d-none d-lg-block">individuals or businesses share articles, opinions, and information in reverse-chronological order.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="/images/blog/blog.webp" class="blog" alt="blog">
+                        <div class="blog-details">
+                            <div class="blog-text text-center">
+                                <h5 class="text-white mb-0">Social Life</h5>
+                                <div class="border-line"></div>
+                                <div class="text-white">Enjoy your social life together</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="/images/blog/blog1.webp" class="blog" alt="blog1">
+                        <div class="blog-details">
+                            <div class="blog-text text-center">
+                                <h5 class="text-white mb-0">Social Life</h5>
+                                <div class="border-line"></div>
+                                <div class="text-white">Enjoy your social life together</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="/images/blog/blog2.webp" class="blog" alt="blog2">
+                        <div class="blog-details">
+                            <div class="blog-text text-center">
+                                <h5 class="text-white mb-0">POLITICS</h5>
+                                <div class="border-line"></div>
+                                <div class="text-white">Enjoy your social life together</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="/images/blog/blog.webp" class="blog" alt="blog4">
+                        <div class="blog-details">
+                            <div class="blog-text text-center">
+                                <h5 class="text-white mb-0">SOCIAL LIFE</h5>
+                                <div class="border-line"></div>
+                                <div class="text-white">Enjoy your social life together</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav gap-5">
-                    <li class="nav-item">
-                        <a class="nav-link text-black set-poppin" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black set-poppin" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black set-poppin" href="#Skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black set-poppin" href="#Projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black set-poppin" href="#Statics">Statics</a>
-                    </li>
-            </ul>
-        </div>
-    </div>
-    <!-- Header section  -->
+     </section>
+    <!-- Blog section -->
 
-    <!-- Hero section -->
-        <section class="container-fluid hero-section py-5" id="Home">
-
+    <!-- Footer section -->
+      <section class="footer_wrapper" id="contact">
             <div class="container">
-                <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col align-content-center">
-                        <div class="home-intro text-center text-lg-start mb-4 mb-lg-0">
-                            <h5>Hi, My name is Piyush.</h5>
-                            <h1>I'm a Developer</h1>
-                            <p>Based in mauje vadgaon.</p>
-                            <a href="#About" class="btn btn-info colored-btn">About Me</a>
+                <div class="row">
+                    <div class="col-12 newsLetter text-center px-4">
+                        <div>
+                            <h3 class="text-white">Get update from anywhere</h3>
+                            <p class="text-white">Boaring vold gathering light his evening unto dont afraid</p>
+                            <form class="row g-3 justify-content-center mt-4">
+                                <div class="col col-sm-6 col-lg-4">
+                                    <input type="email" class="form-control" placeholder="Email address">
+                                </div>
+                                <div class="col col-auto">
+                                    <button type="submit" class="main-btn secondary-btn border-white mb-3">Get Started</button>
+                                </div>
+                            </form>
                         </div>
-                    </div>
-                    <div class="col">
-                        <img src="https://img.magnific.com/free-photo/rainy-day-mood-cartoon-style_23-2151556986.jpg?semt=ais_hybrid&w=740&q=80" class="img-fluid HeroImage" alt="HeroImage">
                     </div>
                 </div>
             </div>
 
-        </section>
-    <!-- Hero section -->
+            <div class="container mt-5">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="footer-logo mb-3 mb-md-0">
+                            <img src="/images/logo.png" class="img-fluid" alt="fotter-logo">
+                        </div>
+                        <div class="my-4 social-icon">
+                            <h5>Follow Me</h5>
+                            <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                                <li><a href="https://www.youtube.com/@piyushlohar3745" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
 
-    <!-- About Section  -->
-    <section class="container-fluid pt-4 pb-5 bg-secondary-subtle border border-bottom border-2" id="About">
-        <h1 class="text-danger about-head">About</h1>
-        <div class="fs-5">I'm Piyush Lohar, a Computer Science Diploma student with a strong interest in front-end web
-            development. I enjoy creating clean, responsive, and user-friendly websites using HTML, CSS, and Bootstrap.
-            My learning approach focuses on building real-world projects, where every new concept is implemented through
-            practical experience. I believe that consistent practice, problem-solving, and continuous improvement are
-            the keys to becoming a better developer. Currently, I am expanding my skills by learning JavaScript to build
-            more interactive and dynamic web applications while continuously growing my portfolio with live projects.I
-            am a Computer Science student focused on becoming a professional developer. I build modern websites and
-            continuously improve my skills.
-        </div>
-    </section>
-    <!-- About Section  -->
+                                <li><a href="https://www.youtube.com/@piyushlohar3745" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
 
-    <!-- Skills Section  -->
-    <section class="container-fluid pt-4 pb-5 bg-body-secondary" id="Skills">
-        <section class="container">
-            <h1 class="text-danger text-center mb-4 mb-xl-5">Skills</h1>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 justify-content-center skill-card">
-                <div class="col">
-                    <div class="card h-100 hover-card">
-                        <img src="images/Front-End.jpg" class="card-img-top img-fluid skill-img" alt="front image">
-                        <div class="card-body">
-                            <h5 class="card-title">Front-End</h5>
-                            <p class="card-text">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Bootstrap</li>
-                                <li>JavaScript</li>
+                                <li><a href="https://www.facebook.com/piyush.lohar.173292?rdid=5B1l9DLEKioLMSRk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BZU7WRSm4%2F#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+
+                                <li><a href="https://github.com/piyushlohar2008-byte/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                             </ul>
-                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 hover-card">
-                        <img src="images/programming-languages.avif" class="card-img-top img-fluid skill-img"
-                            alt="programming image">
-                        <div class="card-body">
-                            <h5 class="card-title">Programming languages</h5>
-                            <p class="card-text">
-                            <ul>
-                                <li>C</li>
-                                <li>C++</li>
-                                <li>Java</li>
-                                <li>Python</li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 hover-card">
-                        <img src="images/Software-Tools.jpg" class="card-img-top img-fluid skill-img" alt="Tool image">
-                        <div class="card-body">
-                            <h5 class="card-title">Tools</h5>
-                            <p class="card-text">
-                            <ul>
-                                <li>VS Code</li>
-                                <li>Git</li>
-                                <li>Github</li>
-                            </ul>
-                            </p>
-                        </div>
+                    <div class="col-lg-8 col-sm-12">
+                        <p class="footer-text text-center my-2">Copyright &copy; 2026 All rights reserved | This website in made up with <i class="far fa-heart me-1"></i>by <a href="https://github.com/piyushlohar2008-byte/">Piyush Lohar</a> </p>
                     </div>
                 </div>
             </div>
-        </section>
-    </section>
-    <!-- Skills Section  -->
-
-    <!-- Project Section  -->
-    <section class="container-fluid pt-4 pb-5 bg-dark-subtle" id="Projects">
-        <section class="container">
-            <h1 class="text-center text-danger mb-4">Projects</h1>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 justify-content-center skill-card">
-                <div class="col">
-                    <div class="card h-100 pro-hover-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Village Website</h5>
-                            <div class="card-text">
-                                <div class="mb-2" style="text-align: justify;">
-                                    A fully responsive village website designed using HTML, CSS, and Bootstrap. It
-                                    provides information about the village, government services, development works,
-                                    notices, schools, and contact details with a clean and user-friendly interface.
-                                </div>
-                                <a href="https://maujevadgaongp.vercel.app/" target="_blank"
-                                    role="button" class="btn btn-primary">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 pro-hover-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Personal Portfolio</h5>
-                            <div class="card-text">
-                                <div class="mb-2" style="text-align: justify;">
-                                    A responsive personal portfolio showcasing my skills, projects, education, and
-                                    learning journey. Built to present my work in a clean and professional way.
-                                </div>
-                                <div class="mb-2">
-                                    HTML | CSS | Bootstrap
-                                </div>
-                                <a href="https://piyushlohar2008-byte.github.io./Micro-projects/" target="_blank"
-                                    role="button" class="btn btn-primary">Visit</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 pro-hover-card">
-                        <div class="card-body">
-                            <h5 class="card-title">JavaScript Project</h5>
-                            <div class="card-text">
-                                <div class="mb-2" style="text-align: justify;">
-                                    Interactive web applications and real-world projects built using JavaScript will be
-                                    added here as I continue expanding my front-end development skills.
-                                </div>
-                                <div class="mb-2">
-                                    HTML | CSS | Bootstrap | JavaScript
-                                </div>
-                                <a href="https://maujevadgaongp.vercel.app/" target="_blank" role="button" class="btn btn-primary">Visit</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- Project Section  -->
-
-    <!-- Education Section  -->
-    <section class="container-fluid pt-5 pb-5 bg-body-tertiary" id="Education">
-        <section class="container">
-            <div class="row row-cols-1 row-cols-md-2  g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title ms-2 mb-3">Education</h5>
-                            <div class="card-text">
-                                <ul class="list-group ">
-                                    <li class="list-group-item bg-body-tertiary">Diploma Computer Science</li>
-                                    <li class="list-group-item bg-body-tertiary">Sangay Godawat Institute</li>
-                                    <li class="list-group-item bg-body-tertiary">3rd year</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title ms-2 mb-3">Achievements</h5>
-                            <div class="card-text">
-                                <ul class="list-group">
-                                    <li class="list-group-item bg-body-tertiary">Responsive Village Website</li>
-                                    <li class="list-group-item bg-body-tertiary">Github Hosted Website</li>
-                                    <li class="list-group-item bg-body-tertiary">Multiple Front-End Projects</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- Education Section  -->
-
-    <!-- Statistics Section  -->
-    <section class="container-fluid pt-4" id="Statics">
-            <h1 class="text-center text-danger mb-4">Statistics</h1>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center">
-                <div class="col py-5 text-white" id="stats-bg-1">
-                    <div class="d-flex justify-content-center mb-2">
-                        <div class="fs-4">Projects Completed</div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="fs-5 state-info">8+ projects</div>
-                    </div>
-                </div>
-
-                <div class="col py-5 text-white" id="stats-bg-2">
-                    <div class="d-flex justify-content-center mb-2">
-                        <div class="fs-4">Live Websites</div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="fs-5 state-info">2+ projects</div>
-                    </div>
-                </div>
-
-                <div class="col py-5 text-white" id="stats-bg-3">
-                    <div class="d-flex justify-content-center mb-2">
-                        <div class="fs-4">Programming Language</div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="fs-5 state-info">4 languages</div>
-                    </div>
-                </div>
-
-                <div class="col py-5 text-white" id="stats-bg-4">
-                    <div class="d-flex justify-content-center mb-2">
-                        <div class="fs-4">Current Focus</div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="fs-5 state-info">JavaScript</div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- Statistics Section  -->
-
-    <!-- Contact Section  -->
-     <section class="container-fluid py-5 bg-dark-subtle" id="Contact">
-        <section class="container">
-        <h2 class="fs-1 text-danger">Social links</h2>
-            <div class="social-container mb-4">
-                <div class="social-media social">
-                    <a href="https://www.youtube.com/@piyushlohar3745" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-                <div class="social-media-2 social">
-                    <a href="https://www.youtube.com/@piyushlohar3745" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="social-media-3 social">
-                    <a href="https://www.facebook.com/piyush.lohar.173292?rdid=5B1l9DLEKioLMSRk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BZU7WRSm4%2F#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                </div>
-                <div class="social-media-4 social">
-                    <a href="https://github.com/piyushlohar2008-byte/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            
-            <h2 class="fs-1 text-danger">Contact</h2>
-            <div>
-                <div class="contact-info"><span class="fs-5 text-primary">Name : </span>Piyush Lohar</div>
-                <div class="contact-info"><span class="fs-5 text-primary">Email : </span>piyushlohar2008@gmail.com</div>
-                <div class="contact-info"><span class="fs-5 text-primary">Phone : </span>9665259715</div>
-                <div class="contact-info" style="text-align: start;"><span class="fs-5 text-primary">Location : </span>Mauje Vadgaon, hatkanangle, Kolhapur</div>
-            </div>
-        </section>
      </section>
-    <!-- Contact Section  -->
+    <!-- Footer section -->
 
-    <!-- Footer Section  -->
-     <section class="container-fluid py-3 bg-dark">
-        <div class="text-center fs-5 text-white">Designed and Developed by</div>
-        <div class="text-center fs-5 text-warning">Piyush Lohar</div>
-     </section>
-    <!-- Footer Section  -->
-
+    <!-- js file link  -->
+    <script src="script.js"></script>
     <!-- Bootstrap 5 js link  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
 </html>
