@@ -207,7 +207,7 @@ html, body {
 
 /* Social link section  */
 .social-container {
-    padding-top: 0.3rem;
+    margin-top: 1.4rem;
     display: flex;
     gap: 1rem;
 }
