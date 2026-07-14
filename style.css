@@ -258,6 +258,11 @@ p {
     margin-left: 0.25rem;
     margin-bottom: 0.2535rem;
 }
+.about_wrapper .call-now i {
+    position: relative;
+    top: -5px;
+    font-size: 2.875rem;
+}
 /* about section  */
 
 /* services section  */
