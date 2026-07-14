@@ -168,6 +168,10 @@ p {
     --webkit-box-shadow: 0 0.25rem, 0.375rem rgba(12, 0, 46, .05);
     box-shadow: 0 0.25rem, 0.375rem rgba(12, 0, 46, .05);
 }
+.navbar-toggler{
+    display: flex;
+    align-items: center;
+}
 
 /* Banner section  */
 .banner_wrapper {
