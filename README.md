@@ -21,16 +21,17 @@ https://piyushlohar.onrender.com/
 
 ## 🛠️ Technologies Used
 - HTML5
-- CSS3
+- CSS 3
 - Bootstrap 5
 - GitHub
+- JavaScript
 
 ## 📁 Project Sections
 - Home
 - About
-- Skills
-- Projects
-- Certificates (Optional)
+- Services
+- Portfolio
+- Blog
 - Contact
 
 ## 🌍 Deployment
@@ -44,6 +45,7 @@ Hosted on render
 - Open Graph
 - Twitter Cards
 - Canonical URLs
+- Schemas
 
 ## 👨‍💻 Developer
 **Piyush Lohar**
