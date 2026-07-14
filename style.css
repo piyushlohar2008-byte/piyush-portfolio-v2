@@ -154,6 +154,7 @@ p {
     text-transform: uppercase;
     color: var(--text-black);
     display: inline-block;
+    letter-spacing: 0.1rem;
 }
 .header_wrapper .nav-item .nav-link.active, 
 .header_wrapper .nav-item .nav-link:hover {
