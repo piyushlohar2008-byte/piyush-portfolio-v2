@@ -68,7 +68,7 @@ section {
     text-transform: uppercase;
     border-radius: 0.3125rem;
     box-shadow: 0 0.625rem 1.875rem rgb(118 85 255 / 30%);
-    border: solid 0.225rem transparent;
+    border: double 0.125rem transparent;
     padding: 0 2.625rem;
     transition: all 0.3s ease-in-out;
     --webkit-transition: all 0.3s ease-in-out;
