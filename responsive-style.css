@@ -121,6 +121,9 @@
         background: var(--bg-black);
         overflow-x: hidden;
     }
+    .main-btn {
+        padding: 0 2.425rem;
+    }
 }
 
 @media (max-width: 390px) {
