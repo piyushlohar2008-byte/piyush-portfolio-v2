@@ -124,5 +124,8 @@
 }
 
 @media (max-width: 390px) {
-
+    .footer_wrapper .row {
+        display: flex;
+        flex-direction: column;
+    }
 }
