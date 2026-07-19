@@ -497,9 +497,13 @@ p {
 }
 /* Social icons */
 
-.footer_wrapper .footer-text  {
-    font-size: 1rem;
-    line-height: 1.25rem;
+@media (min-width: 510px) and (max-width:1400px) {
+    .footer_wrapper .footer-text  {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+}
+.footer_wrapper .footer-text {
     font-weight: 600;
 }
 .footer_wrapper .footer-text a {
