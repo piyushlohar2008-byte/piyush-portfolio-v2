@@ -112,6 +112,13 @@
     .about_para {
         font-size: 1rem;
     }
+    .social-icons a {
+        height: 38px;
+        width: 38px;
+    }
+    .social-icons a i {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 415px) {
