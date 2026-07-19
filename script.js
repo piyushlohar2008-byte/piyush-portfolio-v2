@@ -17,3 +17,41 @@ navBar.forEach(function (a) {
         navCollapse.classList.remove("show");
     })
 })
+
+emailjs.init({
+    publicKey: "YOUR_PUBLIC_KEY",
+});
+
+const form = document.getElementById("emailForm");
+
+form.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const email = document.getElementById("email").value.trim();
+    const msg = document.getElementById("msg");
+
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!pattern.test(email)) {
+        msg.style.color = "red";
+        msg.innerHTML = "Please enter a valid email!";
+        return;
+    }
+
+    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        user_email: email
+    }).then(() => {
+
+        msg.style.color = "green";
+        msg.innerHTML = "Submitted Successfully...!";
+
+        form.reset();
+
+    }).catch(() => {
+
+        msg.style.color = "red";
+        msg.innerHTML = "Failed to submit!";
+    });
+
+});
