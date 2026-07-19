@@ -429,19 +429,7 @@ p {
     max-width: 12.5rem;
     height: auto;
 }
-.footer_wrapper .social-icon li {
-    margin: 0.375rem;
 
-}
-.footer_wrapper .social-icon li a {
-    line-height: 1.875rem;
-    font-size: 1.5625rem;
-    display: inline-block;
-    color: var(--text-black);
-    text-align: center;
-    margin: 0 0.625rem;
-
-}
 /* Social icons */
 .social-icons{
     display:flex;
