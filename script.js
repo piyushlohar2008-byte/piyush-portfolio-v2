@@ -19,7 +19,7 @@ navBar.forEach(function (a) {
 })
 
 emailjs.init({
-    publicKey: "YOUR_PUBLIC_KEY",
+    publicKey: "ShzGF-UgT-PNklaSn",
 });
 
 const form = document.getElementById("emailForm");
@@ -39,7 +39,7 @@ form.addEventListener("submit", function (e) {
         return;
     }
 
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+    emailjs.send("service_k118vme", "template_jk9lw0a", {
         user_email: email
     }).then(() => {
 
